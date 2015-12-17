@@ -6,10 +6,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "scripts": {
-    "start": "node index.js",
-    "postinstall" : "bower install"
-  },
+
   "dependencies": {
     "express": "^4.13.1",
     "body-parser": "^1.14.1",
@@ -26,7 +23,8 @@
   "license": "MIT",
   "scripts": {
     "start": "./node_modules/.bin/nodemon server/index.js --ignore client/ --ignore node_modules/",
-    "test": "./test/run.sh"
+    "test": "./test/run.sh",
+    "postinstall": "bower install"
   },
   "bugs": {
     "url": "https://github.com/dyale/node-catapult-angular/issues"
